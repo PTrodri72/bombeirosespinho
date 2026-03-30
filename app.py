@@ -257,5 +257,7 @@ def logout():
     session.clear()
     return redirect('/')
 
-if __name__ == '__main__':
-    app.run(debug=True)
+app = app # Esta linha ajuda o Vercel a encontrar a aplicação
+
+if __name__ == "__main__":
+    app.run()
