@@ -449,6 +449,5 @@ def logout():
     session.clear()
     return redirect(url_for('home'))
 
-if __name__ == '__main__':
-    # PORTA 5000 PADRÃO PARA DESENVOLVIMENTO
-    app.run(host='0.0.0.0', port=5000, debug=True)
+# No final do ficheiro, substitui o app.run por isto:
+app = app
